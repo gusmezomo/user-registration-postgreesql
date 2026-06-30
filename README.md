@@ -1,4 +1,5 @@
-# PostgreSQL Learning
+# Aplicação Completa Front + API + Back
+## PostgreSQL Learning
 
 Projeto desenvolvido para aprender o funcionamento completo de uma aplicação utilizando PostgreSQL, FastAPI e JavaScript puro.
 
@@ -45,24 +46,6 @@ frontend/
 
 ---
 
-# Fluxo da aplicação
-
-Frontend
-
-↓
-
-FastAPI
-
-↓
-
-Services
-
-↓
-
-PostgreSQL
-
----
-
 # Funcionalidades
 
 - Listar usuários
@@ -74,21 +57,7 @@ PostgreSQL
 
 # Como executar
 
-## 1. Abrir o WSL
-
-```bash
-wsl
-```
-
----
-
-## 2. Iniciar o PostgreSQL
-
-```bash
-!startpost
-```
-
-ou
+## 1. Iniciar o PostgreSQL (WSL)
 
 ```bash
 sudo systemctl start postgresql
@@ -96,7 +65,7 @@ sudo systemctl start postgresql
 
 ---
 
-## 3. Backend
+## 2. Backend
 
 ```bash
 cd backend
@@ -116,7 +85,7 @@ http://localhost:8000/docs
 
 ---
 
-## 4. Frontend
+## 3. Frontend
 
 ```bash
 cd frontend
@@ -145,17 +114,6 @@ Campos:
 - ativo
 - criado_em
 
----
-
-# Próximas melhorias
-
-- Editar usuário
-- Excluir usuário
-- Hash de senha
-- Login
-- JWT
-- Docker
-
 # Estrutura do Projeto
 
 ```text
@@ -163,6 +121,7 @@ postgresql-learning/
 │
 ├── backend/
 │   ├── .env
+│   ├── .env.example
 │   ├── requirements.txt
 │   ├── database.py
 │   ├── main.py
@@ -177,10 +136,7 @@ postgresql-learning/
 │       └── usuario_service.py
 │
 ├── database/
-│   ├── schema.sql
-│   ├── seed.sql
-│   ├── queries.sql
-│   └── teste.sql
+│   └── schema.sql
 │
 └── frontend/
     ├── index.html
@@ -366,35 +322,6 @@ Exemplo:
 - valores padrão.
 
 É executado apenas uma vez para criar a estrutura inicial do banco.
-
----
-
-## `seed.sql`
-
-Insere dados de exemplo no banco.
-
-Utilizado para facilitar testes durante o desenvolvimento.
-
----
-
-## `queries.sql`
-
-Arquivo utilizado para executar consultas SQL durante o desenvolvimento.
-
-Exemplos:
-
-- SELECT
-- UPDATE
-- DELETE
-- JOIN
-
----
-
-## `teste.sql`
-
-Arquivo livre para testes temporários.
-
-Utilizado para experimentar consultas sem alterar os demais scripts.
 
 ---
 
