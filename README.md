@@ -6,7 +6,6 @@ Projeto desenvolvido para aprender o funcionamento completo de uma aplicação u
 O objetivo é entender toda a comunicação entre:
 
 Frontend → API → PostgreSQL.
-
 ---
 
 # Tecnologias
@@ -185,7 +184,7 @@ Não contém regras de negócio nem consultas SQL.
 Responsabilidades:
 
 - Ler as variáveis do arquivo `.env`.
-- Criar uma conexão com o banco utilizando `psycopg`.
+- Criar uma conexão com o banco utilizando `psycopg`, ( é o driver do PostgreSQL para Python. )
 - Disponibilizar essa conexão para o restante da aplicação.
 
 Fluxo:
