@@ -19,6 +19,7 @@ Frontend → API → PostgreSQL.
 - JavaScript
 - DBeaver
 - SQL
+- SUPABASE
 
 ---
 
@@ -27,7 +28,7 @@ Frontend → API → PostgreSQL.
 backend/
 
 - API FastAPI
-- conexão com PostgreSQL
+- conexão com PostgreSQL local ou SUPABASE
 - rotas
 - serviços
 - validação
@@ -49,22 +50,13 @@ frontend/
 
 - Listar usuários
 - Cadastrar usuários
-- Documentação Swagger
 - Validação utilizando Pydantic
 
 ---
 
 # Como executar
 
-## 1. Iniciar o PostgreSQL (WSL)
-
-```bash
-sudo systemctl start postgresql
-```
-
----
-
-## 2. Backend
+## 1. Backend
 
 ```bash
 cd backend
@@ -84,7 +76,7 @@ http://localhost:8000/docs
 
 ---
 
-## 3. Frontend
+## 2. Frontend
 
 ```bash
 cd frontend
