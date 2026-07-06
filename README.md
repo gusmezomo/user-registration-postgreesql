@@ -6,6 +6,10 @@ Projeto desenvolvido para aprender o funcionamento completo de uma aplicação u
 O objetivo é entender toda a comunicação entre:
 
 Frontend → API → PostgreSQL.
+
+![Site](https://i.imgur.com/hJhVgLn)
+
+![Dashboard](https://i.imgur.com/w3BCJq3)
 ---
 
 # Tecnologias
